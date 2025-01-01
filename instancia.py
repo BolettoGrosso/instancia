@@ -1,9 +1,11 @@
+import streamlit as st
+import pandas as pd
 
 # URL of the public Google Sheet in CSV format
 sheet_url = 'https://docs.google.com/spreadsheets/d/1Hu2Rl6QE6-Fd_MeP2M4Ffb6Xzcmwm8cJ1p6QwsJa0fs/export?format=csv'
 
 # Read data from the Google Sheet
-@st.cache_data
+@st.cache_data  # Use this for Streamlit Cloud
 def load_data():
     data = pd.read_csv(sheet_url)
     return data
