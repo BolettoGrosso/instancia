@@ -1,3 +1,6 @@
+import streamlit as st
+import pandas as pd
+
 # URL of the public Google Sheet in CSV format
 sheet_url = 'https://docs.google.com/spreadsheets/d/1Hu2Rl6QE6-Fd_MeP2M4Ffb6Xzcmwm8cJ1p6QwsJa0fs/export?format=csv'
 
